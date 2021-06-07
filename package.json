@@ -4,10 +4,10 @@
   "//3": "updating this file will download and update your packages",
   "name": "hello-express",
   "version": "2.0.0",
-  "description": "haaama Is One",
-  "main": "haaama.js",
+  "description": "calli Is One",
+  "main": "calli.js",
   "scripts": {
-    "start": "node haaama.js"
+    "start": "node calli.js"
   },
   "dependencies": {
     "express": "^4.17.1",
