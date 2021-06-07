@@ -19,7 +19,7 @@ const listener = app.listen(process.env.PORT, () => {
 ///////////////////////////////////////////////////////////////////////////////
 const { Client, MessageEmbed } = require("discord.js");
 var { Util } = require("discord.js");
-const calli = new Client({ disableEveryone: true });
+const haaama = new Client({ disableEveryone: true });
 const canvas = require("canvas");
 const Canvas = require("canvas");
 const convert = require("hh-mm-ss");
@@ -41,7 +41,7 @@ const prefix = "!";        //// Prefix Boot
 const cooldown = new Set();
 const cdtime = 5;
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content === prefix + "owner") {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -53,7 +53,7 @@ calli.on("message", message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     let embed = new Discord.MessageEmbed()
-      .setColor(callicolor)
+      .setColor(haaamacolor)
    //   .setImage(`https://media.discordapp.net/attachments/829751738717306920/835146132023279616/image0.png`)
       .setDescription(`
  
@@ -65,25 +65,25 @@ calli.on("message", message => {
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.login("Tokeeeeen Bottttt")
+haaama.login("Tokeeeeen Bottttt")
 ///////////////////////////////////////////////////////////////////////////////
-const callienabled  = "";
-const callidisabled = "";
-const callifalse    = "";
-const callitrue     = "";
-const callicolor    = "";
-const calliimgae    = "";
-const calliban      = "";                                                                                                                                                                             const securitybots = "Anti Vandalism#6064";
-const calliwarn     = "";                                                                                                                                                                             const callidevelopers = "731952429238714378"; const calliowner = "731952429238714378";
+const haaamaenabled  = "";
+const haaamadisabled = "";
+const haaamafalse    = "";
+const haaamatrue     = "";
+const haaamacolor    = "";
+const haaamaimgae    = "";
+const haaamaban      = "";                                                                                                                                                                             const securitybots = "Anti Vandalism#6064";
+const haaamawarn     = "";                                                                                                                                                                             const haaamadevelopers = "731952429238714378"; const haaamaowner = "731952429238714378";
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("ready", () => {
-  console.log(`${calli.user.tag}`);
-  calli.user.setActivity(`${prefix}help`, {
+haaama.on("ready", () => {
+  console.log(`${haaama.user.tag}`);
+  haaama.user.setActivity(`${prefix}help`, {
     Type: "Playing"
   });
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", async message => {
+haaama.on("message", async message => {
   if (message.content.startsWith(prefix + "help")) {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -95,7 +95,7 @@ calli.on("message", async message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     let help = new Discord.MessageEmbed()
-      .setColor(callicolor)
+      .setColor(haaamacolor)
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
       .setDescription(`
 **Info Commands**
@@ -104,14 +104,12 @@ calli.on("message", async message => {
 \`${prefix}serverinfo\`
 \`${prefix}invite\`
 \`${prefix}owner\`
-
 **Moderation Commands**
 \`${prefix}lock\`
 \`${prefix}unlock\`
 \`${prefix}ban\` : @User
 \`${prefix}kick\` : @User
 \`${prefix}unban\` : Id/all
-
 **Security Number**
 \`${prefix}anti kick\`: **Number**
 \`${prefix}anti ban\`: **Number**
@@ -119,16 +117,13 @@ calli.on("message", async message => {
 \`${prefix}anti channelC\`: **Number**
 \`${prefix}anti roleD\`: **Number**
 \`${prefix}anti roleC\`: **Number**
-
 **Security On/Off**
 \`${prefix}anti bot\`: **on-off**
-
 **Security**
 \`${prefix}settings\`
 \`${prefix}punishment\`
-
 **Links**
-[Support](https://discord.gg/DUN8TFzCpS) - [Invite](https://discord.com/api/oauth2/authorize?client_id=${calli.user.id}&permissions=8&scope=bot)
+[Support](https://discord.gg/DUN8TFzCpS) - [Invite](https://discord.com/api/oauth2/authorize?client_id=${haaama.user.id}&permissions=8&scope=bot)
       
       
       `);
@@ -136,7 +131,7 @@ calli.on("message", async message => {
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content === prefix + "rules") {
   if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -150,35 +145,25 @@ calli.on("message", message => {
     if (message.author.id !== message.guild.ownerID)
       return message.channel.send("**You must have a higher role use this command**");
     let embed = new Discord.MessageEmbed()
-      .setColor(callicolor)
-      .setImage(`callilogo`)
-      .setThumbnail(calli.user.avatarURL())
+      .setColor(haaamacolor)
+      .setImage(`haaamalogo`)
+      .setThumbnail(haaama.user.avatarURL())
       .setDescription(`
 **General Rules 
-
 >  1 . Be respectful. Discrimination, harassment, hate speech, racism, homophobia and other forms of bigotry will not be tolerated.
-
 > Do not force anyone to share their personal details.
-
 > Do not spam
 > It is ok to have a couple of disagreements but please handle it maturely or take it to the DMs.
-
 > Do not promote cruelty, violence, self-harm, suicide or pornography.
-
 > Do not talk about politics or  religion.
 > Be mature and dont be weird in chat.
-
 > Do not be toxic on the chat. Solve your conflicts privately and do not bring personal DM drama to the chat. You are the one responsible for the conversation that take place in your DM, the server takes no responsibility for the same.
-
 > Do not discuss about NSFW topics on the server. Porn, gore, nudity, mutilation, etc. NSFW content of any kind will not be tolerated.
-
 > if you do not follow these rule's results may be in the following bellow:
-
 > Temp Mute
 > Temp Kick
 > Temp Ban
 > Perm Ban
-
 > Depends on your warnings**
       
       `);
@@ -186,7 +171,7 @@ calli.on("message", message => {
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", async message => {
+haaama.on("message", async message => {
   if (message.content.startsWith(prefix + "invite")) {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -198,15 +183,15 @@ calli.on("message", async message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     let help = new Discord.MessageEmbed()
-      .setColor(callicolor)
+      .setColor(haaamacolor)
       .setDescription(`
-[Click here](https://discord.com/api/oauth2/authorize?client_id=${calli.user.id}&permissions=8&scope=bot) **to invite the bot.**
+[Click here](https://discord.com/api/oauth2/authorize?client_id=${haaama.user.id}&permissions=8&scope=bot) **to invite the bot.**
 `);
     message.channel.send(help);
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content.startsWith(`${prefix}botinfo`)) {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -218,13 +203,13 @@ calli.on("message", message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     const tnx = new Discord.MessageEmbed()
-      .setColor(callicolor)
-      .addField("Name", `${calli.user.tag}`, true)
-      .addField("Name", `${calli.user.tag}`, true)
-      .addField("ID", `${calli.user.id}`, true)
+      .setColor(haaamacolor)
+      .addField("Name", `${haaama.user.tag}`, true)
+      .addField("Name", `${haaama.user.tag}`, true)
+      .addField("ID", `${haaama.user.id}`, true)
       .addField("Version", `${process.version}`, true)
-      .addField("Guilds", `${calli.guilds.cache.size} Guilds`, true)
-      .addField("Users", `${calli.users.cache.size} Users`, true)
+      .addField("Guilds", `${haaama.guilds.cache.size} Guilds`, true)
+      .addField("Users", `${haaama.users.cache.size} Users`, true)
       .addField(
         "Ping",
         `${Date.now() - message.createdTimestamp}` + "ms",
@@ -235,7 +220,7 @@ calli.on("message", message => {
   }
 });
 //////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content.startsWith(prefix + "serverinfo")) {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -255,12 +240,12 @@ calli.on("message", message => {
       .addField("Roles", `${message.guild.roles.cache.size} Roles`)
       .addField("Members", `${message.guild.memberCount} Members`)
       .setThumbnail(message.guild.iconURL())
-      .setColor(callicolor);
+      .setColor(haaamacolor);
     message.channel.send(EMBED);
   }
 });
 //////////////////////////////////////////////////////////////////////////////
-calli.on("message", prof => {
+haaama.on("message", prof => {
   if (prof.content.startsWith(prefix + "userinfo")) {
     if (cooldown.has(prof.author.id)) {
       return prof.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -273,7 +258,7 @@ calli.on("message", prof => {
     }, cdtime * 1000);
     var professor = new Discord.MessageEmbed()
       .setThumbnail(prof.member.user.displayAvatarURL({ dynamic: true }))
-      .setColor(callicolor)
+      .setColor(haaamacolor)
       .addField("Usernaem", `<@${prof.author.id}>`)
       .addField("User Id", `${prof.author.id}`)
       .addField(
@@ -286,7 +271,7 @@ calli.on("message", prof => {
   }
 });
 //////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content.startsWith(prefix + "lock")) {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -308,21 +293,19 @@ calli.on("message", message => {
           .setDescription(
             `
 🔒 A channel has been locked.
-
 Channel: <#${message.channel.id}>
 Moderator: <@${message.author.id}>
-
 **Reason**
 Not-Provided
           `
           )
-          .setColor(callicolor);
+          .setColor(haaamacolor);
         return message.channel.send(embed);
       });
   }
 });
 //////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content.startsWith(prefix + "unlock")) {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -344,22 +327,20 @@ calli.on("message", message => {
           .setDescription(
             `
 🔒 A channel has been unloked.
-
 Channel: <#${message.channel.id}>
 Moderator: <@${message.author.id}>
-
 **Reason**
 Not-Provided
           
           `
           )
-          .setColor(callicolor);
+          .setColor(haaamacolor);
         return message.channel.send(embed);
       });
   }
 });
 //////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content === prefix + "servers") {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -375,15 +356,15 @@ calli.on("message", message => {
         "**You must have a higher role use this command**"
       );
     let embed = new Discord.MessageEmbed()
-      .setColor(callicolor)
-      .addField("Guilds", `${calli.guilds.cache.size} Guilds`, true)
-      .addField("Users", `${calli.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} Users`, true)
+      .setColor(haaamacolor)
+      .addField("Guilds", `${haaama.guilds.cache.size} Guilds`, true)
+      .addField("Users", `${haaama.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} Users`, true)
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }));
     message.channel.send({ embed });
   }
 });
 //////////////////////////////////////////////////////////////////////////////
-calli.on("message", async message => {
+haaama.on("message", async message => {
   if (
     message.author.bot ||
     !message.guild ||
@@ -419,8 +400,8 @@ calli.on("message", async message => {
         message.guild.members.cache.find(x => x.id == args[0])
     );
     if (!user) return message.channel.send("** Member not found!**");
-    let bot = message.guild.member(calli.user);
-    if (user.user.id == calli.user.id) return message.channel.send("lol no");
+    let bot = message.guild.member(haaama.user);
+    if (user.user.id == haaama.user.id) return message.channel.send("lol no");
     if (user.user.id == message.guild.owner.id)
       return message.channel.send(`** You can't ${mode} the owner!**`);
     if (
@@ -452,7 +433,7 @@ calli.on("message", async message => {
   }
 });
 //////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   let command = message.content.split(" ")[0];
   if (command == prefix + "unban") {
     if (cooldown.has(message.author.id)) {
@@ -492,13 +473,13 @@ calli.on("message", message => {
   }
 });
 //////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   let commands = message.content.split(" ");
   if (commands[0] == prefix + "embed") {
     if (!message.guild) return;
     if (message.author.id !== message.guild.ownerID)
       return message.reply("** **You must have a higher role use this command****");
-    if (!message.guild.member(calli.user).hasPermission("MANAGE_MESSAGES"))
+    if (!message.guild.member(haaama.user).hasPermission("MANAGE_MESSAGES"))
       return message.reply(
         "**You must have a higher role use this command**"
       );
@@ -511,14 +492,14 @@ calli.on("message", message => {
     }
     message.delete();
     var embed = new Discord.MessageEmbed()
-      .setColor(callicolor)
+      .setColor(haaamacolor)
       .setDescription(`${args}`)
     message.channel.send(embed);
   }
 });
 //////////////////////////////////////////////////////////////////////////////
-calli.on("message", async message => {
-  if (message.content.startsWith(`<@${calli.user.id}>`)) {
+haaama.on("message", async message => {
+  if (message.content.startsWith(`<@${haaama.user.id}>`)) {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
         m.delete({ timeout: cdtime * 600 });
@@ -529,9 +510,9 @@ calli.on("message", async message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     let help = new Discord.MessageEmbed()
-      .setColor(callicolor)
-      .setAuthor(calli.user.username, calli.user.avatarURL())
-      .setThumbnail(calli.user.avatarURL())
+      .setColor(haaamacolor)
+      .setAuthor(haaama.user.username, haaama.user.avatarURL())
+      .setThumbnail(haaama.user.avatarURL())
       .setFooter('Thanks for adding security, I wish you luck!')
       .setDescription(`
 **Hello From Security**
@@ -539,23 +520,23 @@ My Prefix is [${prefix}]
 **About the bot**
 aprofessional moderation & security bot that can security your server
 **report a problem**
-If there is, you can always join the support server by type ${prefix}support. or DM a Developer. Developers you can message include Calli#0001
+If there is, you can always join the support server by type ${prefix}support. or DM a Developer. Developers you can message include haaama#0001
 **Extra Links**
-[Support](https://discord.gg/2XfWseYDWJ) - [Invite](https://discord.com/api/oauth2/authorize?client_id=${calli.user.id}&permissions=8&scope=bot) - [Website](https://security-bot4415.glitch.me/)`);
+[Support](https://discord.gg/2XfWseYDWJ) - [Invite](https://discord.com/api/oauth2/authorize?client_id=${haaama.user.id}&permissions=8&scope=bot) - [Website](https://security-bot4415.glitch.me/)`);
 
     message.channel.send(help);
   }
 });
 //////////////////////////////////////////////////////////////////////////////
-calli.on("guildCreate", guild => {
+haaama.on("guildCreate", guild => {
   let embed = new Discord.MessageEmbed()
-    .setColor(callicolor)
+    .setColor(haaamacolor)
     .setDescription(`Thanks for adding security, I wish you luck!`);
 
   guild.owner.send(embed);
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content === prefix + "anti") {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -571,7 +552,7 @@ calli.on("message", message => {
         "**You must have a higher role use this command**"
       );
     let embed = new Discord.MessageEmbed()
-      .setColor(callicolor)
+      .setColor(haaamacolor)
       .setDescription(`
 **Security Number**
 \`${prefix}anti kick\`: **Number**
@@ -580,14 +561,10 @@ calli.on("message", message => {
 \`${prefix}anti channelC\`: **Number**
 \`${prefix}anti roleD\`: **Number**
 \`${prefix}anti roleC\`: **Number**
-
 **Security On/Off**
 \`${prefix}anti bot\`: **on-off**
-
 **Security**
 \`${prefix}settings\`
-
-
       `)
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }));
     message.channel.send({ embed });
@@ -596,7 +573,7 @@ calli.on("message", message => {
 ///////////////////////////////////////////////////////////////////////////////
 let anti = JSON.parse(fs.readFileSync("./antigreff.json", "UTF8"));
 let config = JSON.parse(fs.readFileSync("./configg.json", "UTF8"));
-calli.on("message", message => {
+haaama.on("message", message => {
   if (!message.channel.guild) return;
   let user = anti[message.guild.id + message.author.id];
   let num = message.content
@@ -622,7 +599,7 @@ calli.on("message", message => {
       if (message.author.id !== message.guild.ownerID) {
       let anti = new Discord.MessageEmbed()
         .setDescription("You must have a higher role use this command")
-        .setColor(callicolor);
+        .setColor(haaamacolor);
       return message.channel.send(anti);
  
     }
@@ -630,12 +607,12 @@ calli.on("message", message => {
       let typeanum = new Discord.MessageEmbed()
 
         .setDescription("type a number")
-        .setColor(callicolor);
+        .setColor(haaamacolor);
 
       {
         let onlyanum = new Discord.MessageEmbed()
           .setDescription("type a number")
-          .setColor(callicolor);
+          .setColor(haaamacolor);
         ///////
         if (message.content.startsWith(prefix + "anti ban")) {
           if (!num) return message.channel.send(typeanum);
@@ -643,13 +620,13 @@ calli.on("message", message => {
           config[message.guild.id].banLimit = num;
           {
             let ban = new Discord.MessageEmbed()
-              .setColor(callicolor)
+              .setColor(haaamacolor)
               .setDescription(
                 `
 Anti Ban has been updated
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].banLimit} ${calliwarn} 
-Punish at: ${config[message.guild.id].banLimit} ${calliban}
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].banLimit} ${haaamawarn} 
+Punish at: ${config[message.guild.id].banLimit} ${haaamaban}
 `
               );
 
@@ -662,14 +639,12 @@ Punish at: ${config[message.guild.id].banLimit} ${calliban}
           if (isNaN(num)) return message.channel.send(onlyanum);
           config[message.guild.id].kickLimits = num;
           {
-            let ban = new Discord.MessageEmbed().setColor(callicolor)
+            let ban = new Discord.MessageEmbed().setColor(haaamacolor)
               .setDescription(`
-
 Anti Kick has been updated
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].kickLimits} ${calliwarn} 
-Punish at: ${config[message.guild.id].kickLimits} ${calliban}
-
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].kickLimits} ${haaamawarn} 
+Punish at: ${config[message.guild.id].kickLimits} ${haaamaban}
 `);
 
             message.channel.send(ban);
@@ -681,12 +656,12 @@ Punish at: ${config[message.guild.id].kickLimits} ${calliban}
           if (isNaN(num)) return message.channel.send(onlyanum);
           config[message.guild.id].roleDelLimit = num;
           {
-            let roled = new Discord.MessageEmbed().setColor(callicolor)
+            let roled = new Discord.MessageEmbed().setColor(haaamacolor)
               .setDescription(`
 Anti Role-Delete has been updated
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].roleDelLimit} ${calliwarn} 
-Punish at: ${config[message.guild.id].roleDelLimit} ${calliban} `);
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].roleDelLimit} ${haaamawarn} 
+Punish at: ${config[message.guild.id].roleDelLimit} ${haaamaban} `);
 
             message.channel.send(roled);
            
@@ -697,12 +672,12 @@ Punish at: ${config[message.guild.id].roleDelLimit} ${calliban} `);
           if (isNaN(num)) return message.channel.send(onlyanum);
           config[message.guild.id].roleCrLimits = num;
           {
-            let rolec = new Discord.MessageEmbed().setColor(callicolor)
+            let rolec = new Discord.MessageEmbed().setColor(haaamacolor)
               .setDescription(`
 Anti Role-Create has been updated
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].roleCrLimits} ${calliwarn} 
-Punish at: ${config[message.guild.id].roleCrLimits} ${calliban} `);
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].roleCrLimits} ${haaamawarn} 
+Punish at: ${config[message.guild.id].roleCrLimits} ${haaamaban} `);
 
             message.channel.send(rolec);
            
@@ -713,12 +688,12 @@ Punish at: ${config[message.guild.id].roleCrLimits} ${calliban} `);
           if (isNaN(num)) return message.channel.send(onlyanum);
           config[message.guild.id].chaDelLimit = num;
           {
-            let ban = new Discord.MessageEmbed().setColor(callicolor)
+            let ban = new Discord.MessageEmbed().setColor(haaamacolor)
               .setDescription(`
 Anti Channel-Delete has been updated
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].chaDelLimit} ${calliwarn} 
-Punish at: ${config[message.guild.id].chaDelLimit} ${calliban} `);
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].chaDelLimit} ${haaamawarn} 
+Punish at: ${config[message.guild.id].chaDelLimit} ${haaamaban} `);
 
             message.channel.send(ban);
            
@@ -729,12 +704,12 @@ Punish at: ${config[message.guild.id].chaDelLimit} ${calliban} `);
           if (isNaN(num)) return message.channel.send(onlyanum);
           config[message.guild.id].chaCrLimit = num;
           {
-            let ban = new Discord.MessageEmbed().setColor(callicolor)
+            let ban = new Discord.MessageEmbed().setColor(haaamacolor)
               .setDescription(`
 Anti Channel-Create has been updated
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].chaCrLimit} ${calliwarn} 
-Punish at: ${config[message.guild.id].chaCrLimit} ${calliban} `);
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].chaCrLimit} ${haaamawarn} 
+Punish at: ${config[message.guild.id].chaCrLimit} ${haaamaban} `);
 
             message.channel.send(ban);
            
@@ -746,12 +721,12 @@ Punish at: ${config[message.guild.id].chaCrLimit} ${calliban} `);
           config[message.guild.id].time = num;
           {
             let ban = new Discord.MessageEmbed()
-              .setColor(callicolor)
+              .setColor(haaamacolor)
               .setDescription(`
 Anti Time has been updated
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].time} ${calliwarn} 
-Punish at: ${config[message.guild.id].time} ${calliban} `
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].time} ${haaamawarn} 
+Punish at: ${config[message.guild.id].time} ${haaamaban} `
               );
 
             message.channel.send(ban);
@@ -777,7 +752,7 @@ Punish at: ${config[message.guild.id].time} ${calliban} `
   }
 });
 
-calli.on("channelCreate", async channel => {
+haaama.on("channelCreate", async channel => {
   const entry1 = await channel.guild
     .fetchAuditLogs({
       type: "CHANNEL_CREATE"
@@ -818,9 +793,9 @@ calli.on("channelCreate", async channel => {
         .ban()
         .catch(e => {
           let warncrchan = new Discord.MessageEmbed()
-            .setColor(callicolor)
+            .setColor(haaamacolor)
             .setFooter(`security`).setDescription(`
-**User Punished** ${calliban} 
+**User Punished** ${haaamaban} 
 have punished a user, details:
 **Server:**
 ${channel.guild.name}
@@ -854,7 +829,7 @@ channel-create Members
   });
 });
 
-calli.on("channelDelete", async channel => {
+haaama.on("channelDelete", async channel => {
   const entry1 = await channel.guild
     .fetchAuditLogs({
       type: "CHANNEL_DELETE"
@@ -895,9 +870,9 @@ calli.on("channelDelete", async channel => {
         .ban()
         .catch(e => {
           let warndelchan = new Discord.MessageEmbed()
-            .setColor(callicolor)
+            .setColor(haaamacolor)
             .setFooter(`security`).setDescription(`
-**User Punished** ${calliban}
+**User Punished** ${haaamaban}
 have punished a user, details:
 **Server:**
 ${channel.guild.name}
@@ -931,7 +906,7 @@ channel-delete Members
   });
 });
 
-calli.on("roleDelete", async channel => {
+haaama.on("roleDelete", async channel => {
   const entry1 = await channel.guild
     .fetchAuditLogs({
       type: "ROLE_DELETE"
@@ -972,9 +947,9 @@ calli.on("roleDelete", async channel => {
         .ban()
         .catch(e => {
           let warndelrole = new Discord.MessageEmbed()
-            .setColor(callicolor)
+            .setColor(haaamacolor)
             .setFooter(`security`).setDescription(`
-**User Punished** ${calliban}
+**User Punished** ${haaamaban}
 have punished a user, details:
 **Server:**
 ${channel.guild.name}
@@ -1008,7 +983,7 @@ role-delete Members
   });
 });
 
-calli.on("roleCreate", async channel => {
+haaama.on("roleCreate", async channel => {
   const entry1 = await channel.guild
     .fetchAuditLogs({
       type: "ROLE_CREATE"
@@ -1049,9 +1024,9 @@ calli.on("roleCreate", async channel => {
         .ban()
         .catch(e => {
           let warncrrole = new Discord.MessageEmbed()
-            .setColor(callicolor)
+            .setColor(haaamacolor)
             .setFooter(`security`).setDescription(`
-**User Punished** ${calliban} 
+**User Punished** ${haaamaban} 
 have punished a user, details:
 **Server:**
 ${channel.guild.name}
@@ -1085,7 +1060,7 @@ role-create Members
   });
 });
 
-calli.on("guildBanAdd", async (guild, user) => {
+haaama.on("guildBanAdd", async (guild, user) => {
   const entry1 = await guild
     .fetchAuditLogs({
       type: "MEMBER_BAN_ADD"
@@ -1123,9 +1098,9 @@ calli.on("guildBanAdd", async (guild, user) => {
         .ban()
         .catch(e => {
           let warnban1 = new Discord.MessageEmbed()
-            .setColor(callicolor)
+            .setColor(haaamacolor)
             .setFooter(`security`).setDescription(`
-**User Punished** ${calliban}
+**User Punished** ${haaamaban}
 have punished a user, details:
 **Server:**
 ${guild.guild.name}
@@ -1159,7 +1134,7 @@ banning Members
   });
 });
 
-calli.on("guildKickAdd", async (guild, user) => {
+haaama.on("guildKickAdd", async (guild, user) => {
   const entry1 = await guild
     .fetchAuditLogs({
       type: "MEMBER_KICK"
@@ -1197,9 +1172,9 @@ calli.on("guildKickAdd", async (guild, user) => {
         .ban()
         .catch(e => {
           let warnkick1 = new Discord.MessageEmbed()
-            .setColor(callicolor)
+            .setColor(haaamacolor)
             .setFooter(`security`).setDescription(`
-**User Punished** ${calliban} 
+**User Punished** ${haaamaban} 
 have punished a user, details:
 **Server:**
 ${guild.guild.name}
@@ -1232,7 +1207,7 @@ kicking Members
     if (e) throw e;
   });
 });
-calli.on("guildMemberRemove", async member => {
+haaama.on("guildMemberRemove", async member => {
   const entry1 = await member.guild
     .fetchAuditLogs()
     .then(audit => audit.entries.first());
@@ -1276,9 +1251,9 @@ calli.on("guildMemberRemove", async member => {
           .ban()
           .catch(e => {
             let warnban2 = new Discord.MessageEmbed()
-              .setColor(callicolor)
+              .setColor(haaamacolor)
               .setFooter(`security`).setDescription(`
-**User Punished** ${calliban}
+**User Punished** ${haaamaban}
 have punished a user, details:
 **Server:**
 ${guild.guild.name}
@@ -1313,7 +1288,7 @@ banning Members
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content === prefix + "settings") {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -1330,42 +1305,36 @@ calli.on("message", message => {
       );
     let embed = new Discord.MessageEmbed()
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
-      .setColor(callicolor)
+      .setColor(haaamacolor)
       .setAuthor("Security Settings", "")
       .setDescription(`
       
 **Anti Ban**
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].banLimit} ${calliwarn} 
-Punish at: ${config[message.guild.id].banLimit} ${calliban}
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].banLimit} ${haaamawarn} 
+Punish at: ${config[message.guild.id].banLimit} ${haaamaban}
 **Anti Kick**
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].kickLimits} ${calliwarn} 
-Punish at: ${config[message.guild.id].kickLimits} ${calliban}
-
-
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].kickLimits} ${haaamawarn} 
+Punish at: ${config[message.guild.id].kickLimits} ${haaamaban}
 **Anti Role-Create**
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].roleCrLimits} ${calliwarn} 
-Punish at: ${config[message.guild.id].roleCrLimits} ${calliban}
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].roleCrLimits} ${haaamawarn} 
+Punish at: ${config[message.guild.id].roleCrLimits} ${haaamaban}
 **Anti Role-Delete**
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].roleDelLimit} ${calliwarn} 
-Punish at: ${config[message.guild.id].roleDelLimit} ${calliban}
-
-
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].roleDelLimit} ${haaamawarn} 
+Punish at: ${config[message.guild.id].roleDelLimit} ${haaamaban}
 **Anti Channel-Create**
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].chaCrLimit} ${calliwarn} 
-Punish at: ${config[message.guild.id].chaCrLimit} ${calliban}
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].chaCrLimit} ${haaamawarn} 
+Punish at: ${config[message.guild.id].chaCrLimit} ${haaamaban}
 **Anti Channel-Delete**
-Enabled: ${callienabled}
-Warn at: ${config[message.guild.id].chaDelLimit} ${calliwarn} 
-Punish at: ${config[message.guild.id].chaDelLimit} ${calliban}
-
-
+Enabled: ${haaamaenabled}
+Warn at: ${config[message.guild.id].chaDelLimit} ${haaamawarn} 
+Punish at: ${config[message.guild.id].chaDelLimit} ${haaamaban}
 **Punishment:**
-Ban: ${calliban}
+Ban: ${haaamaban}
       
       `);
     message.channel.send({ embed });
@@ -1374,7 +1343,7 @@ Ban: ${calliban}
 ///////////////////////////////////////////////////////////////////////////////
 let antibots = JSON.parse(fs.readFileSync("./antibots.json", "utf8"));
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content.startsWith(prefix + "anti bot on")) {
   if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -1386,10 +1355,10 @@ calli.on("message", message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     let embed = new Discord.MessageEmbed()
-    .setColor(callicolor)
+    .setColor(haaamacolor)
     .setDescription(`
 Anti Bot Has been updated 
-Enabled: ${callienabled}
+Enabled: ${haaamaenabled}
 `)
     if (!message.channel.guild) return;
     if (message.author.id !== message.guild.ownerID) return;
@@ -1406,7 +1375,7 @@ Enabled: ${callienabled}
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content.startsWith(prefix + "anti bot off")) {
   if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -1418,11 +1387,11 @@ calli.on("message", message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     let embed = new Discord.MessageEmbed()
-    .setColor(callicolor)
+    .setColor(haaamacolor)
           .setDescription(
         `
 Anti Bot Has been updated 
-Disabled: ${callidisabled}
+Disabled: ${haaamadisabled}
 `
       )
     if (!message.channel.guild) return;
@@ -1440,7 +1409,7 @@ Disabled: ${callidisabled}
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("guildMemberAdd", member => {
+haaama.on("guildMemberAdd", member => {
   if (!antibots[member.guild.id])
     antibots[member.guild.id] = {
       onoff: "Off"
@@ -1456,7 +1425,7 @@ fs.writeFile("./antibots.json", JSON.stringify(antibots), err => {
     });
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content === prefix + "punishment") {
   if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -1470,13 +1439,13 @@ calli.on("message", message => {
     if (message.author.id !== message.guild.ownerID)
       return message.channel.send("**You must have a higher role use this command**");
     let embed = new Discord.MessageEmbed()
-      .setColor(callicolor)
+      .setColor(haaamacolor)
       .setDescription(`Type a Punishment like **Kick** Or **Ban**`);
     message.channel.send({ embed });
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content === prefix + "punishment ban") {
   if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -1490,13 +1459,13 @@ calli.on("message", message => {
     if (message.author.id !== message.guild.ownerID)
       return message.channel.send("**You must have a higher role use this command**");
     let embed = new Discord.MessageEmbed()
-      .setColor(callicolor)
+      .setColor(haaamacolor)
       .setDescription(`Punishment has update to ban`);
     message.channel.send({ embed });
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-calli.on("message", message => {
+haaama.on("message", message => {
   if (message.content === prefix + "punishment kick") {
   if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
@@ -1510,9 +1479,8 @@ calli.on("message", message => {
     if (message.author.id !== message.guild.ownerID)
       return message.channel.send("**You must have a higher role use this command**");
     let embed = new Discord.MessageEmbed()
-      .setColor(callicolor)
+      .setColor(haaamacolor)
       .setDescription(`Punishment has update to kick`);
     message.channel.send({ embed });
   }
 });
-///////////////////////////////////////////////////////////////////////////////
