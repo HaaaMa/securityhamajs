@@ -65,7 +65,7 @@ haaama.on("message", message => {
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-haaama.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.SU9X7mk_7_EpgYNRoLiNiNi1YpU")
+haaama.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.yuK_Mp2DhbO26K92uq3u0Xow5AM")
 ///////////////////////////////////////////////////////////////////////////////
 const haaamaenabled  = "";
 const haaamadisabled = "";
