@@ -71,7 +71,7 @@ const haaamaenabled  = "";
 const haaamadisabled = "";
 const haaamafalse    = "";
 const haaamatrue     = "";
-const haaamacolor    = "";
+const haaamacolor    = "RANDOM";
 const haaamaimgae    = "";
 const haaamaban      = "";                                                                                                                                                                             const securitybots = "Anti Vandalism#6064";
 const haaamawarn     = "";                                                                                                                                                                             const haaamadevelopers = "731952429238714378"; const haaamaowner = "731952429238714378";
