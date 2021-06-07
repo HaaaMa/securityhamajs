@@ -54,14 +54,13 @@ calli.on("message", message => {
     }, cdtime * 1000);
     let embed = new Discord.MessageEmbed()
       .setColor(callicolor)
-      .setImage(`https://media.discordapp.net/attachments/829751738717306920/835146132023279616/image0.png`)
+   //   .setImage(`https://media.discordapp.net/attachments/829751738717306920/835146132023279616/image0.png`)
       .setDescription(`
-👑 OwnerCode 
-(Calli#0001,AMxSakran^#3799)
-🤖 Securitybots 
-(Anti Vandalism#6064)
+ 
+🤖Securitybots 
+(HaaaMa)
       `)
-      .setThumbnail(`https://media.discordapp.net/attachments/829751738717306920/835145114519208017/image0.gif`)
+   //   .setThumbnail(`https://media.discordapp.net/attachments/829751738717306920/835145114519208017/image0.gif`)
     message.channel.send({ embed });
   }
 });
@@ -129,7 +128,7 @@ calli.on("message", async message => {
 \`${prefix}punishment\`
 
 **Links**
-[Support](https://discord.gg/2XfWseYDWJ) - [Invite](https://discord.com/api/oauth2/authorize?client_id=${calli.user.id}&permissions=8&scope=bot) - [Website](https://security-bot4415.glitch.me/)
+[Support](https://discord.gg/DUN8TFzCpS) - [Invite](https://discord.com/api/oauth2/authorize?client_id=${calli.user.id}&permissions=8&scope=bot)
       
       
       `);
