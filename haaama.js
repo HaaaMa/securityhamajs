@@ -65,7 +65,7 @@ haaama.on("message", message => {
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-haaama.login("Tokeeeeen Bottttt")
+haaama.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.SU9X7mk_7_EpgYNRoLiNiNi1YpU")
 ///////////////////////////////////////////////////////////////////////////////
 const haaamaenabled  = "";
 const haaamadisabled = "";
