@@ -37,7 +37,7 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "!";        //// Prefix Boot
+const prefix = "1";        //// Prefix Boot
 const cooldown = new Set();
 const cdtime = 5;
 ///////////////////////////////////////////////////////////////////////////////
@@ -58,14 +58,14 @@ haaama.on("message", message => {
       .setDescription(`
  
 🤖Securitybots 
-(HaaaMa)
+(<@!640204311262920764>)
       `)
    //   .setThumbnail(`https://media.discordapp.net/attachments/829751738717306920/835145114519208017/image0.gif`)
     message.channel.send({ embed });
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-haaama.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.yuK_Mp2DhbO26K92uq3u0Xow5AM")
+haaama.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.zA9L4VkVzZFqbVKZTbWJya4b4Xo")
 ///////////////////////////////////////////////////////////////////////////////
 const haaamaenabled  = "";
 const haaamadisabled = "";
